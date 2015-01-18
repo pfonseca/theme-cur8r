@@ -103,7 +103,7 @@
           {% else %}
           <div class="post-details">
             <h2><a href="{{ post.permalink }}">{{ post.title|truncate(40, False, '...') }}</a></h2>
-            <p>Created at: {{ post.created_at|format_date }}</p>
+            <h3>Created at: {{ post.created_at|format_date }}</h3>
             {{ post.content|truncate(150, False, '...') }}
           </div>
           {% endif %}
