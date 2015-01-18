@@ -214,7 +214,9 @@
         <br/>
         <h3>Tags:</h3>
         {% for tag in site.tags %}
-          <a href="/tag/{{tag.name}}" class="tag" >{{tag.name}}</a>
+          <ul class="tags">
+            <li><a href="/tag/{{tag.name}}" class="tag" >{{tag.name}}</a></li>
+          </ul>
         {% endfor %}
       </div>
 
