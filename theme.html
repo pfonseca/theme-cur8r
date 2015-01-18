@@ -211,7 +211,11 @@
         <h2><img src="{{ site.avatar }}" class="avatar" /></h2>
         <h3>{{ site.name }}</h3>
         <p class="bio">{{ site.bio }}</p>
-        <p>{{site.tags}}</p>
+        <br/>
+        <h3>Tags:</h3>
+        {% for tag in site.tags %}
+          <a href="/tag/{{tag.name}}" >{{tag.name}}({{tag.count}})</a>
+        {% endfor %}
       </div>
 
       <div class="header">
